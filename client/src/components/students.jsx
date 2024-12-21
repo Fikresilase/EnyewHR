@@ -30,7 +30,7 @@ function Students() {
         <div className="text-center lg:text-left">
           <button
             onClick={() => navigate("/current")}
-            className="inline-block bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
           >
             Start here
           </button>

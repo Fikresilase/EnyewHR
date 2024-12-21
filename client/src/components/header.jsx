@@ -24,7 +24,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
       <div className="container mx-auto px-4 py-3 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 lg:h-12" />
+          <h1 className="font-bold bg-red">logo</h1>
         </div>
         
         {/* Navbar for large screens */}
@@ -32,36 +32,36 @@ function Header({ onSignupOpen, onLoginOpen }) {
           <a
             onClick={() => scrollToSection("home")}
             href="#home"
-            className="text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 relative group cursor-pointer"
+            className="text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 relative group cursor-pointer"
           >
             Home
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </a>
           <a
             onClick={() => scrollToSection("students")}
             href="#students"
-            className="text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 relative group cursor-pointer"
+            className="text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 relative group cursor-pointer"
           >
-            Students
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            About US
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </a>
           <a
             onClick={() => scrollToSection("instructors")}
             href="#instructors"
-            className="text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 relative group cursor-pointer"
+            className="text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 relative group cursor-pointer"
           >
-            Instructors
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            Login
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </a>
         </nav>
 
         {/* Check Materials Button (only visible on large screens) */}
         <div className="hidden lg:flex">
           <button
-            onClick={() => navigate("/materials")}
-            className="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300"
+            onClick={() => scrollToSection("footer")}
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
           >
-            Check Materials
+            contact Us
           </button>
         </div>
 
@@ -69,7 +69,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
         <div className="lg:hidden flex items-center">
           <button
             onClick={toggleMobileMenu}
-            className="text-gray-800 hover:text-red-600 focus:outline-none"
+            className="text-gray-800 hover:text-blue-600 focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -99,7 +99,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
                 toggleMobileMenu(); // Close menu on click
               }}
               href="#home"
-              className="block text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 cursor-pointer"
+              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
             >
               Home
             </a>
@@ -109,7 +109,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
                 toggleMobileMenu();
               }}
               href="#students"
-              className="block text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 cursor-pointer"
+              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
             >
               Students
             </a>
@@ -119,13 +119,13 @@ function Header({ onSignupOpen, onLoginOpen }) {
                 toggleMobileMenu();
               }}
               href="#instructors"
-              className="block text-gray-800 text-lg font-semibold hover:text-red-600 transition duration-300 cursor-pointer"
+              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
             >
               Instructors
             </a>
             <button
               onClick={() => navigate("/materials")}
-              className="block w-full text-left px-4 py-2 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300"
+              className="block w-full text-left px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
             >
               Check Materials
             </button>

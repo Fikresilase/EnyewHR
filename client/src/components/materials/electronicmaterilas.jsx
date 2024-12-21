@@ -94,12 +94,12 @@ const ElectronicMaterials = () => {
   };
 
   return (
-    <div className="p-8 relative min-h-screen bg-gradient-to-b from-red-100 to-red-200">
+    <div className="p-8 relative min-h-screen bg-gradient-to-b from-blue-100 to-blue-200">
       {/* Back Arrow */}
       <div className="mb-6">
         <FontAwesomeIcon
           icon={faArrowLeft}
-          className="h-8 w-8 cursor-pointer text-red-700 hover:text-red-900 transition-colors duration-300"
+          className="h-8 w-8 cursor-pointer text-blue-700 hover:text-blue-900 transition-colors duration-300"
           onClick={handleBack}
         />
       </div>
@@ -107,12 +107,12 @@ const ElectronicMaterials = () => {
       {/* Add Material Button */}
       <button
         onClick={handleAdd}
-        className="absolute top-4 right-4  bg-red-600 text-white rounded-full p-4 s hover:shadow-xl hover:bg-red-700 "
+        className="absolute top-4 right-4  bg-blue-600 text-white rounded-full p-4 s hover:shadow-xl hover:bg-blue-700 "
       >
         <FontAwesomeIcon icon={faPlus} />
       </button>
 
-      <h1 className="text-center text-3xl font-extrabold text-red-800 mb-8 tracking-wide">
+      <h1 className="text-center text-3xl font-extrabold text-blue-800 mb-8 tracking-wide">
         {materialType === "All" ? "All Materials" : `${materialType} Materials`}
       </h1>
 
@@ -121,7 +121,7 @@ const ElectronicMaterials = () => {
         <select
           value={materialType}
           onChange={handleFilterChange}
-          className="border rounded-lg p-3 shadow-md focus:ring-2 focus:ring-red-300"
+          className="border rounded-lg p-3 shadow-md focus:ring-2 focus:ring-blue-300"
         >
           <option value="All">All Materials</option>
           <option value="Video">Video</option>
@@ -136,28 +136,28 @@ const ElectronicMaterials = () => {
           <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="space-y-2">
               <div>
-                <strong className="text-red-800">Number:</strong> {item.number}
+                <strong className="text-blue-800">Number:</strong> {item.number}
               </div>
               <div>
-                <strong className="text-red-800">Name:</strong> {item.name}
+                <strong className="text-blue-800">Name:</strong> {item.name}
               </div>
               <div>
-                <strong className="text-red-800">Model:</strong> {item.model}
+                <strong className="text-blue-800">Model:</strong> {item.model}
               </div>
               <div>
-                <strong className="text-red-800">Amount:</strong> {item.amount}
+                <strong className="text-blue-800">Amount:</strong> {item.amount}
               </div>
               <div>
-                <strong className="text-red-800">Serial No:</strong> {item.serialNo}
+                <strong className="text-blue-800">Serial No:</strong> {item.serialNo}
               </div>
               <div>
-                <strong className="text-red-800">Working Remark:</strong> {item.working || "N/A"}
+                <strong className="text-blue-800">Working Remark:</strong> {item.working || "N/A"}
               </div>
             </div>
             <div className="mt-6 flex justify-end">
               <button
                 onClick={() => handleDelete(item.number)}
-                className="text-red-500 hover:text-red-700 transition-colors duration-300"
+                className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
               >
                 <FontAwesomeIcon icon={faTrash} /> Delete
               </button>

@@ -76,7 +76,7 @@ function Login() {
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 mb-4">
             Login to your account
           </h1>
-          {error && <p className="text-red-500">{error}</p>}
+          {error && <p className="text-blue-500">{error}</p>}
           <form className="space-y-4" onSubmit={handleLogin}>
             <div>
               <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900">
@@ -86,7 +86,7 @@ function Login() {
                 type="text"
                 name="username"
                 id="username"
-                className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-100 focus:border-red-100 block w-full p-2.5"
+                className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-100 focus:border-blue-100 block w-full p-2.5"
                 placeholder="emelia_erickson24"
                 required
                 value={username}
@@ -102,7 +102,7 @@ function Login() {
                 name="password"
                 id="password"
                 placeholder="••••••••"
-                className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-100 focus:border-red-100 block w-full p-2.5"
+                className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-100 focus:border-blue-100 block w-full p-2.5"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -111,7 +111,7 @@ function Login() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full ${loading ? "bg-gray-400" : "bg-red-600"} text-white rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 transition duration-300`}
+              className={`w-full ${loading ? "bg-gray-400" : "bg-blue-600"} text-white rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300`}
             >
               {loading ? "Logging in..." : "Login"}
             </button>
@@ -120,7 +120,7 @@ function Login() {
             Don’t have an account yet?{" "}
             <button
               onClick={() => navigate("/login")}
-              className="font-medium text-red-600 hover:underline"
+              className="font-medium text-blue-600 hover:underline"
             >
               Sign up
             </button>

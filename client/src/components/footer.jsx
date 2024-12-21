@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content p-10">
+    <footer id="footer" className="footer bg-neutral text-neutral-content p-10">
       <aside>
         <img src={logo} alt="Logo" className="h-12 lg:h-12" />
         <p>
@@ -17,7 +17,7 @@ function Footer() {
         <div className="grid grid-flow-col gap-4">
           <a 
             href="https://x.com/ebczena?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" 
-            className="hover:text-red-500">
+            className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -29,7 +29,7 @@ function Footer() {
           </a>
           <a 
             href="https://www.youtube.com/channel/UCOhrz3uRCOHmK6ueUstw7_Q" 
-            className="hover:text-red-500">
+            className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -41,7 +41,7 @@ function Footer() {
           </a>
           <a 
             href="https://www.facebook.com/EBCzena/" 
-            className="hover:text-red-500">
+            className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

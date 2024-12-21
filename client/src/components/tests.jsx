@@ -34,7 +34,7 @@ function Tests() {
               <p>{material.description}</p>
               <div className="card-actions flex justify-end">
                 <button
-                  className="btn m-2 bg-red-600 hover:bg-red-700"
+                  className="btn m-2 bg-blue-600 hover:bg-blue-700"
                   onClick={() => {
                     console.log(`Navigating to: ${material.title}`);
                     navigate(material.path); // Navigate to the appropriate path

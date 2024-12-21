@@ -38,7 +38,7 @@ function Learningmaterials() {
               console.log("Navigating back to materials");
               navigate("/materials");
             }}
-            className="text-gray-600 hover:text-red-600 transition-colors"
+            className="text-gray-600 hover:text-blue-600 transition-colors"
             aria-label="Go back to materials"
           >
             <svg
@@ -57,9 +57,9 @@ function Learningmaterials() {
             </svg>
           </button>
 
-          <h1 className="text-red-600 text-3xl font-bold text-center flex-grow">
+          <h1 className="text-blue-600 text-3xl font-bold text-center flex-grow">
             Learning Materials <br />
-            <span className="text-red-600 mb-8 text-xl font-bold text-center flex-grow">
+            <span className="text-blue-600 mb-8 text-xl font-bold text-center flex-grow">
               Occupational Standard: Broadcast Technology NTQF L1-L4
             </span>
           </h1>
@@ -76,7 +76,7 @@ function Learningmaterials() {
                 <p>{material.description}</p>
                 <div className="card-actions justify-end">
                   <button
-                    className="btn bg-red-600 hover:bg-red-700"
+                    className="btn bg-blue-600 hover:bg-blue-700"
                     onClick={() => navigate(material.route)}
                   >
                     Explore

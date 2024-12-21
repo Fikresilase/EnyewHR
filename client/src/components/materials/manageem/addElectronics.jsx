@@ -66,7 +66,7 @@ const AddElectronics = () => {
       <h1 className="text-center text-2xl font-bold mb-4">
         Add Electronic Material
       </h1>
-      {error && <p className="text-red-500 text-center">{error}</p>}
+      {error && <p className="text-blue-500 text-center">{error}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block mb-1">Type</label>

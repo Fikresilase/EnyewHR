@@ -8,7 +8,7 @@ function Instructors({ onLoginOpen, onSignupOpen }) {
   return (
     <div
       id="instructors"
-      className="bg-red-100 w-full h-screen p-8 flex flex-col lg:flex-row items-center lg:py-3"
+      className="bg-blue-100 w-full h-screen p-8 flex flex-col lg:flex-row items-center lg:py-3"
     >
       {/* Text Section */}
       <div className="lg:w-1/2 container mx-auto px-4 py-8 lg:px-16 lg:py-12">
@@ -20,7 +20,7 @@ function Instructors({ onLoginOpen, onSignupOpen }) {
         <div className="text-center lg:text-left">
           <button
             onClick={() => navigate("/tests")}
-            className="inline-block bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
           >
             Log in
           </button>

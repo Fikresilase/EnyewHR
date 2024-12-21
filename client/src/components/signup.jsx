@@ -42,7 +42,7 @@ function Signup({ onClose }) {
               type="text"
               name="name"
               id="name"
-              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-100 focus:border-red-100 block w-full p-2.5"
+              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-100 focus:border-blue-100 block w-full p-2.5"
               placeholder="Emelia Erickson"
               required
             />
@@ -58,7 +58,7 @@ function Signup({ onClose }) {
               type="text"
               name="username"
               id="username"
-              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-100 focus:border-red-100 block w-full p-2.5"
+              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-100 focus:border-blue-100 block w-full p-2.5"
               placeholder="emelia_erickson24"
               required
             />
@@ -74,14 +74,14 @@ function Signup({ onClose }) {
               type="password"
               name="password"
               id="password"
-              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-100 focus:border-red-100 block w-full p-2.5"
+              className="bg-gray-100 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-100 focus:border-blue-100 block w-full p-2.5"
               placeholder="••••••••"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-red-600 text-white rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 transition duration-300"
+            className="w-full bg-blue-600 text-white rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300"
           >
             Create an account
           </button>
@@ -98,7 +98,7 @@ function Signup({ onClose }) {
         <div className="flex flex-col space-y-2">
           <button
             type="button"
-            className="w-full bg-gray-50 text-gray-900 rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-red-300 transition duration-300 flex items-center justify-center"
+            className="w-full bg-gray-50 text-gray-900 rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 flex items-center justify-center"
           >
             <img
               src={google}
@@ -109,7 +109,7 @@ function Signup({ onClose }) {
           </button>
           <button
             type="button"
-            className="w-full bg-gray-50 text-gray-900 rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-red-300 transition duration-300 flex items-center justify-center"
+            className="w-full bg-gray-50 text-gray-900 rounded-lg font-medium text-sm px-5 py-2.5 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 flex items-center justify-center"
           >
             <img
               src={facebook}
@@ -123,7 +123,7 @@ function Signup({ onClose }) {
           Already have an account?{" "}
           <button
             onClick={() => navigate("/login")} // Navigate to login page
-            className="font-medium text-red-600 hover:underline"
+            className="font-medium text-blue-600 hover:underline"
           >
             Sign in here
           </button>

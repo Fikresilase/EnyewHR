@@ -9,18 +9,18 @@ function Materials() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-100 to-red-200 p-6 flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-200 p-6 flex flex-col items-center">
       {/* Back Button */}
       <div className="mb-6 self-start">
         <FontAwesomeIcon
           icon={faArrowLeft}
-          className="h-8 w-8 cursor-pointer text-red-700 hover:text-red-900 transition-colors duration-300"
+          className="h-8 w-8 cursor-pointer text-blue-700 hover:text-blue-900 transition-colors duration-300"
           onClick={() => navigate("/")}
         />
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl font-extrabold text-center text-red-800 mb-10">
+      <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-10">
         Explore Materials
       </h1>
 
@@ -43,7 +43,7 @@ function Materials() {
             <div className="flex justify-end">
               <button
                 onClick={() => navigate("/electronicmaterials")}
-                className="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300"
+                className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
               >
                 Explore <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </button>
@@ -69,7 +69,7 @@ function Materials() {
             <div className="flex justify-end">
               <button
                 onClick={() => navigate("/learningmaterials")}
-                className="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300"
+                className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
               >
                 Explore <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </button>

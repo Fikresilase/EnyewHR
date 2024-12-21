@@ -122,7 +122,7 @@ const AudioMaterials = () => {
             <div className="mt-4">
             <button
     onClick={() => handleDelete(item.number)} // Pass the item.number for deletion
-    className="text-red-500 hover:text-red-700"
+    className="text-blue-500 hover:text-blue-700"
 >
     <FontAwesomeIcon icon={faTrash} /> Delete
 </button>

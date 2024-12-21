@@ -26,7 +26,7 @@ function Current() {
       <header className="bg-white mb-8 w-full py-4 shadow-md fixed top-0 z-50">
 
         {/* Header code here */}
-      <h3 className="text-red-600 font-bold text-center">Take your tests here</h3>
+      <h3 className="text-blue-600 font-bold text-center">Take your tests here</h3>
       </header>
       <div className="container1 justify-center mt-8 m-4 container flex flex-wrap">
         {materials.map((material, index) => (
@@ -36,7 +36,7 @@ function Current() {
               <p>{material.description}</p>
               <div className="card-actions flex justify-end">
                 <button
-                  className="btn m-2 bg-red-600 hover:bg-red-700"
+                  className="btn m-2 bg-blue-600 hover:bg-blue-700"
                   onClick={() => {
                     console.log(`Navigating to: ${material.title}`);
                     navigate(material.path); // Navigate to the appropriate path
