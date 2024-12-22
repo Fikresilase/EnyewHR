@@ -90,7 +90,18 @@ const Members = () => {
       return;
     }
 
-    navigate("/addElectronics");
+    navigate("/addedit");
+  };
+
+
+  const handleEdit = () => {
+    const token = sessionStorage.getItem("token");
+    if (!token) {
+      navigate("/login", { state: { from: location.pathname } });
+      return;
+    }
+
+    navigate("/addedit");
   };
 
   return (

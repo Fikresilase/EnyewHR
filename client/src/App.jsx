@@ -10,6 +10,7 @@ import Login from "./components/Login";
 
 import About from "./components/About";
 import Members from "./components/members";
+import AddEdit from "./components/addEdit";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         <Route path="/members" element={<Members/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-   
+        <Route path="/addedit" element={<AddEdit />} />
       </Routes>
       {/* </AuthProvider> */}
     </Router>
