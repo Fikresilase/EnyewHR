@@ -1,11 +1,12 @@
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import React from 'react';
 
 function Footer() {
   return (
     <footer id="footer" className="footer bg-neutral text-neutral-content p-10">
       <aside>
-        <img src={logo} alt="Logo" className="h-12 lg:h-12" />
+        {/* <img src={} alt="Logo" className="h-12 lg:h-12" /> */}
+        <p className='font-bold text-4xl'>logo</p>
         <p>
           Ethiopian Brodcasing Corporation.
           <br />

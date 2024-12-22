@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import google from "../assets/google.svg";
-import facebook from "../assets/facebook.svg";
+// import google from "../assets/google.svg";
+// import facebook from "../assets/facebook.svg";
 
 function Signup({ onClose }) {
   const navigate = useNavigate();

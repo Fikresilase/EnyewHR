@@ -1,6 +1,5 @@
 // src/components/hero.jsx
 import React from "react";
-import student from "../assets/student.svg";
 import { useNavigate } from "react-router-dom";
 
 function About() {

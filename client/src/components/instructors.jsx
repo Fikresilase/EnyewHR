@@ -1,6 +1,5 @@
 // src/components/Instructors.jsx
 import React from "react";
-import instructor from "../assets/instructor.svg";
 import { useNavigate } from 'react-router-dom';
 
 function Instructors({ onLoginOpen, onSignupOpen }) {
