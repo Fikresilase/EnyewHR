@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import About from "./components/About";
 import Members from "./components/members";
 import AddEdit from "./components/addEdit";
+import Dashboard from "./components/dashboard";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/addedit" element={<AddEdit />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
       </Routes>
       {/* </AuthProvider> */}
     </Router>
