@@ -6,18 +6,18 @@ function Footer() {
     <footer id="footer" className="footer bg-neutral text-neutral-content p-10">
       <aside>
         {/* <img src={} alt="Logo" className="h-12 lg:h-12" /> */}
-        <p className='font-bold text-4xl'>logo</p>
+        <p className='font-bold text-4xl'>Mebtech</p>
         <p>
-          Ethiopian Brodcasing Corporation.
+          Lorem ipsum bora bora
           <br />
-          Training and Research Center
+          Lorum ipsum tagla nasa bora bora
         </p>
       </aside>
       <nav>
-        <h6 className="footer-title">Follow EBC</h6>
+        <h6 className="footer-title">Follow Mebtech</h6>
         <div className="grid grid-flow-col gap-4">
           <a 
-            href="https://x.com/ebczena?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" 
+            href="https://x.com" 
             className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ function Footer() {
             </svg>
           </a>
           <a 
-            href="https://www.youtube.com/channel/UCOhrz3uRCOHmK6ueUstw7_Q" 
+            href="https://www.youtube.com/" 
             className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ function Footer() {
             </svg>
           </a>
           <a 
-            href="https://www.facebook.com/EBCzena/" 
+            href="https://www.facebook.com/" 
             className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"

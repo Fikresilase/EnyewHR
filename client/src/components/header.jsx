@@ -24,7 +24,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
       <div className="container mx-auto px-4 py-3 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="font-bold bg-red">logo</h1>
+          <h1 className="font-bold text-4xl bg-red">Mebtech</h1>
         </div>
         
         {/* Navbar for large screens */}
@@ -66,72 +66,11 @@ function Header({ onSignupOpen, onLoginOpen }) {
         </div>
 
         {/* Mobile Menu Button (visible only on small screens) */}
-        <div className="lg:hidden flex items-center">
-          <button
-            onClick={toggleMobileMenu}
-            className="text-gray-800 hover:text-blue-600 focus:outline-none"
-          >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
+        
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <nav className="lg:hidden bg-white border-t shadow-md">
-          <div className="space-y-2 px-4 py-3">
-            <a
-              onClick={() => {
-                scrollToSection("home");
-                toggleMobileMenu(); // Close menu on click
-              }}
-              href="#home"
-              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
-            >
-              Home
-            </a>
-            <a
-              onClick={() => {
-                scrollToSection("students");
-                toggleMobileMenu();
-              }}
-              href="#students"
-              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
-            >
-              Students
-            </a>
-            <a
-              onClick={() => {
-                scrollToSection("instructors");
-                toggleMobileMenu();
-              }}
-              href="#instructors"
-              className="block text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 cursor-pointer"
-            >
-              Instructors
-            </a>
-            <button
-              onClick={() => navigate("/materials")}
-              className="block w-full text-left px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
-            >
-              Check Materials
-            </button>
-          </div>
-        </nav>
-      )}
+      
     </header>
   );
 }

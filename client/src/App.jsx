@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import { AuthProvider } from "./components/utils/AuthContext";
 import Header from "./components/header";
 import Hero from "./components/hero";
-import Instructors from "./components/instructors";
+import Instructors from "./components/logging";
 import Footer from "./components/footer";
 import Signup from "./components/signup";
 import Login from "./components/Login";
 
-import About from "./components/students";
+
+import About from "./components/About";
+import Members from "./components/members";
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
           }
         />
         {/* Login and Signup Pages */}
+        <Route path="/members" element={<Members/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
    

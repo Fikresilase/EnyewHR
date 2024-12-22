@@ -22,8 +22,8 @@ function Hero({ onLoginOpen }) {
   >
     {/* Text section */}
     <div className="relative lg:w-1/2 lg:pr-12 z-10 text-center lg:text-left bg-opacity-80 p-6 rounded-md ">
-      <h1 className="text-4xl lg:text-6xl font-serif text-white font-medium leading-snug lg:leading-tight mb-4 lg:mb-6">
-        AI-Driven Patient Monitoring
+      <h1 className="text-6xl lg:text-6xl font-serif text-white font-bold leading-snug lg:leading-tight mb-4 lg:mb-6">
+        MebTech Azolarea bogna satara
       </h1>
       <p className="text-base lg:text-lg text-white leading-relaxed mb-6 lg:mb-8">
         Harnessing computer vision to detect patient behavior, provide timely
@@ -31,16 +31,17 @@ function Hero({ onLoginOpen }) {
       </p>
       <div className="text-center lg:text-left">
         <button
-          // onClick={gotosignup}
-          className="inline-block bg-custom-greenblue hover:bg-custom-darkblue text-white font-medium py-2 px-6 rounded-full transition duration-300"
+        
+          className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
         >
-          Start Now
+          <a href="/login">Start Now
+          </a>
         </button>
       </div>
     </div>
 
     {/* Optional: add a semi-transparent overlay for the background image */}
-    <div className="absolute inset-0 bg-black z-1"></div>
+    <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
   </div>
   );
 }
