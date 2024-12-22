@@ -1,7 +1,7 @@
 // src/components/hero.jsx
 import { TypeAnimation } from 'react-type-animation';
 import React from "react";
-// import hero from "../assets/hero.jpg";
+import hero from "../assets/hero.jpg";
 import { useNavigate } from "react-router-dom";
 
 function Hero({ onLoginOpen }) {
@@ -12,7 +12,7 @@ function Hero({ onLoginOpen }) {
     className="relative flex flex-col lg:flex-row items-center justify-center px-8 bg-blue-100"
     style={{
       paddingTop: "64px", // Replace 64px with your navbar's height
-      // backgroundImage: `url(${hero})`,
+      backgroundImage: `url(${hero})`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ function Hero({ onLoginOpen }) {
     </div>
 
     {/* Optional: add a semi-transparent overlay for the background image */}
-    <div className="absolute inset-0 bg-black z-0"></div>
+    <div className="absolute inset-0 bg-black z-1"></div>
   </div>
   );
 }
