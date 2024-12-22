@@ -59,7 +59,7 @@ const Members = () => {
   };
 
   const handleBack = () => {
-    navigate("/materials");
+    navigate("/");
   };
 
   const handleDelete = async (number) => {
@@ -95,57 +95,58 @@ const Members = () => {
 
   return (
     <div className="p-8 relative min-h-screen bg-gradient-to-b from-blue-100 to-blue-200">
-      {/* Back Arrow */}
-      <div className="mb-6">
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          className="h-8 w-8 cursor-pointer text-blue-700 hover:text-blue-900 transition-colors duration-300"
-          onClick={handleBack}
-        />
-      </div>
+  {/* Back Arrow */}
+  <div className="mb-6">
+    <FontAwesomeIcon
+      icon={faArrowLeft}
+      className="h-8 w-8 cursor-pointer text-blue-700 hover:text-blue-900 transition-colors duration-300"
+      onClick={handleBack}
+    />
+  </div>
 
-      {/* Add Material Button */}
-      <button
-        onClick={handleAdd}
-        className="absolute top-4 right-4  bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300 "
+  {/* Add Material Button */}
+  <button
+    onClick={handleAdd}
+    className="absolute top-4 right-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300"
+  >
+    Add Members
+  </button>
+
+  <h1 className="text-center text-3xl font-extrabold text-blue-800 mb-8 tracking-wide">
+    {materialType === "All" ? "All Materials" : `${materialType} Materials`}
+  </h1>
+
+  <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    {data.map((item, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
       >
-        Add Members
-      </button>
-
-      <h1 className="text-center text-3xl font-extrabold text-blue-800 mb-8 tracking-wide">
-        {materialType === "All" ? "All Materials" : `${materialType} Materials`}
-      </h1>      
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {data.map((item, index) => (
-          <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="space-y-2">
-              
-              <div>
-                <strong className="text-blue-800">Name:</strong> {item.name}
-              </div>  
-            </div>
-            <div className="mt-6 flex justify-end">
-              <button
-                onClick={() => handleDelete(item.number)}
-                className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
-              >
-                <FontAwesomeIcon icon={faEdit} /> Edit
-              </button>
-            </div>
-            <div className="mt-6 flex justify-end">
-              <button
-                onClick={() => handleDelete(item.number)}
-                className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
-              >
-                <FontAwesomeIcon icon={faTrash} /> Delete
-              </button>
-            </div>
-            
+        {/* Name and Buttons Inline */}
+        <div className="flex justify-between items-center">
+          <div>
+            <strong className="text-blue-800">Name:</strong> {item.name}
           </div>
-        ))}
+          <div className="space-x-4">
+            <button
+              onClick={() => handleEdit(item.number)}
+              className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faEdit} />
+            </button>
+            <button
+              onClick={() => handleDelete(item.number)}
+              className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faTrash} />
+            </button>
+          </div>
+        </div>
       </div>
-      
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 
