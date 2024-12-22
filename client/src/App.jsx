@@ -39,6 +39,7 @@ import CurrentLight from "./components/current/light";
 import CurrentEditing from "./components/current/editing";
 import CurrentCamera from "./components/current/camera";
 import CurrentRf from "./components/current/rf";
+import About from "./components/students";
 
 function App() {
   return (
@@ -53,41 +54,13 @@ function App() {
             <>
               <Header />
               <Hero />
-              <Students />
+              <About/>
               <Instructors />
               <Footer />
               {/* <Route path="/tests" element={<Tests />}  */}
             </>
           }
         />
-
-        {/* Route for the Materials component */}
-        {/* <Route path="/tests" element={<Tests />} /> */}
-
-        <Route path="/level1" element={<Level1 />} />
-        <Route path="/level2" element={<Level2 />} />
-        <Route path="/level3" element={<Level3 />} />
-        <Route path="/level4" element={<Level4 />} />
-        {/* <Route path="/audio" element={<AudioTest />} /> */}
-        <Route path="/materials" element={<Materials />} />
-        <Route path="/learningmaterials" element={<LearningMaterials />} />
-        <Route path="/electronicmaterials" element={<ElectronicMaterials />} />
-        <Route path="/videomaterials" element={<VideoMaterials />} />
-        <Route path="/audiomaterials" element={<AudioMaterials />} />
-        <Route path="/lightmaterials" element={<LightMaterials />} />
-        <Route
-          path="/communicationmaterials"
-          element={<CommunicationMaterials />}
-        />
-        <Route path="/current" element={<Current />} />
-        <Route path="/currentAudio" element={<CurrentAudio />} />
-        <Route path="/currentVideo" element={<CurrentVideo />} />
-        <Route path="/currentIt" element={<CurrentIt />} />
-        <Route path="/currentLight" element={<CurrentLight />} />
-        <Route path="/currentEditing" element={<CurrentEditing />} />
-        <Route path="/currentCamera" element={<CurrentCamera />} />
-        <Route path="/currentRf" element={<CurrentRf />} />
-
         {/* Login and Signup Pages */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

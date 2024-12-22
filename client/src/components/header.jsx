@@ -38,7 +38,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </a>
           <a
-            onClick={() => scrollToSection("students")}
+            onClick={() => scrollToSection("about-us")}
             href="#students"
             className="text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 relative group cursor-pointer"
           >
@@ -46,7 +46,7 @@ function Header({ onSignupOpen, onLoginOpen }) {
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </a>
           <a
-            onClick={() => scrollToSection("instructors")}
+            onClick={() => scrollToSection("logging")}
             href="#instructors"
             className="text-gray-800 text-lg font-semibold hover:text-blue-600 transition duration-300 relative group cursor-pointer"
           >
