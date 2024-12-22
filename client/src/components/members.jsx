@@ -124,7 +124,7 @@ const Members = () => {
   </button>
 
   <h1 className="text-center text-3xl font-extrabold text-blue-800 mb-8 tracking-wide">
-    {materialType === "All" ? "All Materials" : `${materialType} Materials`}
+    {materialType === "All" ? "All members" : `${materialType} Materials`}
   </h1>
 
   <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
