@@ -1,4 +1,5 @@
 // src/components/hero.jsx
+// ready to be delivered
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
